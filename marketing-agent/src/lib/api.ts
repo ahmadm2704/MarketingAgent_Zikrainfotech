@@ -1,6 +1,8 @@
 // API client for MarketMind AI backend
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API_BASE = (typeof window !== "undefined" && window.location.hostname.includes("vercel.app")) 
+  ? "/api" 
+  : (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000");
 
 export interface ChatMessage {
   role: "user" | "assistant" | "tool";

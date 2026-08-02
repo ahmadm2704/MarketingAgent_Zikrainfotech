@@ -301,7 +301,7 @@ async def delete_session(session_id: str):
 
 # ---- Campaign Endpoints ----
 
-@app.post("/api/campaigns/save")
+@app.post("/api/campaigns")
 async def save_campaign(request: SaveCampaignRequest):
     """Save a generated marketing asset."""
     try:
@@ -341,7 +341,7 @@ async def get_campaigns(campaign_type: Optional[str] = None):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.put("/api/campaigns/{campaign_id}/favorite")
+@app.patch("/api/campaigns/{campaign_id}/favorite")
 async def toggle_favorite(campaign_id: str):
     """Toggle favorite status of a campaign."""
     try:
