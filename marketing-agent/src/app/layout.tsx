@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Background3D />
-        <div style={{ position: "relative", zIndex: 1, height: "100vh", width: "100vw", overflow: "hidden" }}>
+        <div style={{ position: "relative", zIndex: 1, minHeight: "100vh", width: "100vw", overflowX: "hidden" }}>
           {children}
         </div>
       </body>
