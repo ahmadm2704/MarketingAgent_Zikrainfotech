@@ -33,7 +33,7 @@ def generate_ad_copy(
     except:
         variants_int = 3
     from langchain_groq import ChatGroq
-    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.8)
+    llm = ChatGroq(model="llama3-8b-8192", temperature=0.8)
 
     platform_specs = {
         "google": "Google Ads (headlines max 30 chars, descriptions max 90 chars)",
@@ -93,7 +93,7 @@ def generate_email_sequence(
     except:
         num_emails_int = 5
     from langchain_groq import ChatGroq
-    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.7)
+    llm = ChatGroq(model="llama3-8b-8192", temperature=0.7)
 
     prompt = f"""You are an expert email marketing strategist who has written sequences for 500+ companies.
 
@@ -143,7 +143,7 @@ def generate_landing_page_copy(
     Generate complete landing page copy including hero, features, benefits, FAQ, and CTA sections.
     """
     from langchain_groq import ChatGroq
-    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.7)
+    llm = ChatGroq(model="llama3-8b-8192", temperature=0.7)
 
     prompt = f"""You are a world-class conversion copywriter (think David Ogilvy meets CXL).
 
@@ -206,7 +206,7 @@ def generate_social_posts(
     Generate social media posts optimized for each platform's format and audience.
     """
     from langchain_groq import ChatGroq
-    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.85)
+    llm = ChatGroq(model="llama3-8b-8192", temperature=0.85)
 
     platform_list = [p.strip() for p in platforms.split(",")]
 

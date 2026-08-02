@@ -64,7 +64,7 @@ def create_marketing_agent():
 
     # Initialize the LLM
     llm = ChatGroq(
-        model="llama-3.1-8b-instant",
+        model="llama3-8b-8192",
         temperature=0.7,
     )
 
