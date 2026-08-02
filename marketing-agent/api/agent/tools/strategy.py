@@ -31,7 +31,7 @@ def generate_campaign_strategy(
     messaging, tactics, KPIs, and execution roadmap.
     """
     from langchain_groq import ChatGroq
-    llm = ChatGroq(model="mixtral-8x7b-32768", temperature=0.7)
+    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.7)
 
     prompt = f"""You are a senior marketing strategist at a top-tier agency (think McKinsey x Creative). 
 You've helped scale 100+ businesses from $0 to $10M+ in revenue.
@@ -114,7 +114,7 @@ def generate_ab_test_variants(
     Generate A/B test variants for any marketing asset with hypothesis and measurement plan.
     """
     from langchain_groq import ChatGroq
-    llm = ChatGroq(model="mixtral-8x7b-32768", temperature=0.85)
+    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.85)
 
     prompt = f"""You are a CRO (Conversion Rate Optimization) expert who has run 10,000+ A/B tests.
 
@@ -171,7 +171,7 @@ def generate_content_calendar(
     """
     from langchain_groq import ChatGroq
     from datetime import datetime
-    llm = ChatGroq(model="mixtral-8x7b-32768", temperature=0.75)
+    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.75)
 
     current_month = month or datetime.now().strftime("%B %Y")
 

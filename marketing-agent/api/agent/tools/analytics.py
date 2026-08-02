@@ -23,7 +23,7 @@ def analyze_campaign_metrics(
     and specific optimization recommendations.
     """
     from langchain_groq import ChatGroq
-    llm = ChatGroq(model="mixtral-8x7b-32768", temperature=0.5)
+    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.5)
 
     prompt = f"""You are a data-driven marketing analyst who has optimized thousands of campaigns.
 
@@ -102,7 +102,7 @@ def generate_performance_report(
     Generate a comprehensive executive marketing performance report with insights and next steps.
     """
     from langchain_groq import ChatGroq
-    llm = ChatGroq(model="mixtral-8x7b-32768", temperature=0.5)
+    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.5)
 
     prompt = f"""You are a CMO preparing a comprehensive marketing performance report for the board.
 
