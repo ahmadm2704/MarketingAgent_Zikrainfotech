@@ -50,7 +50,7 @@ def create_marketing_agent():
     tools = [
         generate_ad_copy,
         generate_email_sequence,
-        # generate_landing_page_copy,
+        generate_landing_page_copy,
         generate_social_posts,
         generate_campaign_strategy,
         generate_ab_test_variants,
