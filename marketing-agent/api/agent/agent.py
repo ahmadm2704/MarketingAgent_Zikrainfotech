@@ -50,16 +50,16 @@ def create_marketing_agent():
     tools = [
         generate_ad_copy,
         generate_email_sequence,
-        generate_landing_page_copy,
+        # generate_landing_page_copy,
         generate_social_posts,
         generate_campaign_strategy,
-        generate_ab_test_variants,
-        generate_content_calendar,
+        # generate_ab_test_variants,
+        # generate_content_calendar,
         research_seo_keywords,
-        analyze_competitor,
-        get_marketing_insights,
-        analyze_campaign_metrics,
-        generate_performance_report,
+        # analyze_competitor,
+        # get_marketing_insights,
+        # analyze_campaign_metrics,
+        # generate_performance_report,
     ]
 
     # Initialize the LLM
