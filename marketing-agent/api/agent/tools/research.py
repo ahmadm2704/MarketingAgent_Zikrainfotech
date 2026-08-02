@@ -28,7 +28,7 @@ def research_seo_keywords(
     from langchain_groq import ChatGroq
     from serpapi import GoogleSearch
 
-    llm = ChatGroq(model="llama3-8b-8192", temperature=0.5)
+    llm = ChatGroq(model="mixtral-8x7b-32768", temperature=0.5)
     
     serp_data = ""
     serp_key = os.environ.get("SERPAPI_KEY")
@@ -124,7 +124,7 @@ def analyze_competitor(
     and identify gaps and opportunities.
     """
     from langchain_groq import ChatGroq
-    llm = ChatGroq(model="llama3-8b-8192", temperature=0.6)
+    llm = ChatGroq(model="mixtral-8x7b-32768", temperature=0.6)
 
     prompt = f"""You are a competitive intelligence analyst who helps brands outmaneuver competitors.
 
@@ -200,7 +200,7 @@ def get_marketing_insights(
     Get current marketing trends, benchmarks, and actionable insights for a specific industry.
     """
     from langchain_groq import ChatGroq
-    llm = ChatGroq(model="llama3-8b-8192", temperature=0.65)
+    llm = ChatGroq(model="mixtral-8x7b-32768", temperature=0.65)
 
     prompt = f"""You are a market research analyst and marketing consultant specializing in {industry}.
 
