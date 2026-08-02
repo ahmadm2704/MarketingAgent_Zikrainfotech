@@ -152,7 +152,7 @@ export default function HomePage() {
         minHeight: "100vh",
         background: "transparent",
         position: "relative",
-        overflow: "hidden",
+        overflowX: "hidden",
       }}
     >
       {/* Animated background orbs */}
