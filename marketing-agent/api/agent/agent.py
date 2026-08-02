@@ -64,12 +64,12 @@ def create_marketing_agent():
 
     # Initialize the LLM
     llm = ChatGroq(
-        model="llama-3.3-70b-versatile",
-        temperature=0.7,
+        model="llama-3.1-8b-instant",
+        temperature=0,
     )
 
     # Bind tools to LLM
-    llm_with_tools = llm.bind_tools(tools)
+    llm_with_tools = llm.bind_tools(tools, parallel_tool_calls=False)
 
     # Build the agent node
     def agent_node(state: AgentState):
